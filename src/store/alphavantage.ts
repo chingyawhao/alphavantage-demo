@@ -21,6 +21,7 @@ export class AlphavantageStore extends StoreBase {
 
   changeSymbol = (symbol:string) => {
     this._symbol = symbol
+    localStorage.setItem('symbol', symbol)
     this.trackSymbol()
   }
 
